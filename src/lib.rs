@@ -18,11 +18,13 @@
     rust_2018_idioms
 )]
 
+mod default_settings;
+use default_settings::Settings;
+
 use asr::{
     file_format::pe,
     future::{next_tick, retry},
     settings::Gui,
-    settings::gui::Title,
     signature::Signature,
     timer::{self, TimerState},
     watcher::Watcher,
@@ -129,87 +131,8 @@ impl Addresses {
     }
 }
 
-#[derive(Gui)]
-struct Settings {
-    #[heading_level = 0]
-    ///Split Settings
-    _split_settings: Title,
-
-        #[heading_level = 1]
-        ///Arcade Splits
-        _arcade_splits: Title,
-
-            #[heading_level = 2]
-            ///BB Arcade
-            _bb_arcade: Title,
-
-                ///Start Arcade
-                #[default = false]
-                _bb_start: bool,
-
-                ///Finish Arcade
-                #[default = false]
-                _bb_end: bool,
-
-            #[heading_level = 2]
-            ///Monty Golf
-            _mg_arcade: Title,
-
-                ///Start Arcade
-                #[default = false]
-                _mg_start: bool,
-
-                ///Finish Hole 1
-                #[default = false]
-                _hole_1: bool,
-
-                ///Finish Hole 2
-                #[default = false]
-                _hole_2: bool,
-
-                ///Finish Hole 3
-                #[default = false]
-                _hole_3: bool,
-
-                ///Finish Hole 4
-                #[default = false]
-                _hole_4: bool,
-
-                ///Finish Hole 5
-                #[default = false]
-                _hole_5: bool,
-
-                ///Finish Hole 6
-                #[default = false]
-                _hole_6: bool,
-
-                ///Finish Hole 7
-                #[default = false]
-                _hole_7: bool,
-
-                ///Finish Hole 8
-                #[default = false]
-                _hole_8: bool,
-
-                ///Finish Hole 9
-                #[default = false]
-                _hole_9: bool,
-
-                ///Finish Arcade
-                #[default = false]
-                _mg_end: bool,
-
-            #[heading_level = 2]
-            ///Princess Quest
-            _pq_arcades: Title,
-
-    #[heading_level = 0]
-    ///In-Game Time Settings
-    _igt_settings: Title,
-}
-
 fn startup() {
-    
+
 }
 
 fn update_loop(_proc: &Process, _addresses: &Addresses, _watchers: &mut Watchers) {
@@ -244,28 +167,6 @@ startup {
     settings.Add("Item Splits", false);
     settings.Add("Positional Splits", false);
     settings.Add("Time Splits", false);
-
-    settings.CurrentDefaultParent = "Arcade Splits";
-    settings.Add("BB Arcade", false);
-    settings.Add("Monty Golf", false);
-    settings.Add("Princess Quest", false);
-
-    settings.CurrentDefaultParent = "BB Arcade";
-    settings.Add("bb_start", false, "Start Arcade");
-    settings.Add("bb_end", false, "Finish Arcade");
-
-    settings.CurrentDefaultParent = "Monty Golf";
-    settings.Add("mg_start", false, "Start Arcade");
-    settings.Add("Finish Hole 1", false);
-    settings.Add("Finish Hole 2", false);
-    settings.Add("Finish Hole 3", false);
-    settings.Add("Finish Hole 4", false);
-    settings.Add("Finish Hole 5", false);
-    settings.Add("Finish Hole 6", false);
-    settings.Add("Finish Hole 7", false);
-    settings.Add("Finish Hole 8", false);
-    settings.Add("Finish Hole 9", false);
-    settings.Add("mg_end", false, "Finish Arcade");
 
     settings.CurrentDefaultParent = "Princess Quest";
     settings.Add("Princess Quest 1", false);
