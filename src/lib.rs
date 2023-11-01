@@ -24,10 +24,9 @@ use asr::{
     settings::Gui,
     settings::gui::Title,
     signature::Signature,
-    time::Duration,
     timer::{self, TimerState},
     watcher::Watcher,
-    Address, Address64, Process,
+    Address, Process,
 };
 
 asr::panic_handler!();
@@ -213,19 +212,19 @@ fn startup() {
     
 }
 
-fn update_loop(proc: &Process, addresses: &Addresses, watchers: &mut Watchers) {
+fn update_loop(_proc: &Process, _addresses: &Addresses, _watchers: &mut Watchers) {
 
 }
 
-fn split(watchers: &Watchers, settings: &Settings) -> bool {
+fn split(_watchers: &Watchers, _settings: &Settings) -> bool {
     false
 }
 
-fn start(watchers: &Watchers, settings: &Settings) -> bool {
+fn start(_watchers: &Watchers, _settings: &Settings) -> bool {
     false
 }
 
-fn reset(watchers: &Watchers, settings: &Settings) -> bool {
+fn reset(_watchers: &Watchers, _settings: &Settings) -> bool {
     false
 }
 
