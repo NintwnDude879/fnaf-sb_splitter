@@ -22,13 +22,13 @@ mod default_settings;
 use default_settings::Settings;
 
 use asr::{
-    file_format::pe,
+    //file_format::pe,
     future::{next_tick, retry},
     settings::Gui,
-    signature::Signature,
+    //signature::Signature,
     timer::{self, TimerState},
-    watcher::Watcher,
-    Address, Process,
+    //watcher::Watcher,
+    /*Address,*/ Process,
 };
 
 asr::panic_handler!();
@@ -101,33 +101,33 @@ async fn main() {
 
 #[derive(Default)]
 struct Watchers {
-    watcher_name: Watcher<i64>,
-    var_name: i64,
+    //watcher_name: Watcher<i64>,
+    //var_name: i64,
 }
 
 struct Addresses {
-    base_address: Address,
+    //base_address: Address,
 }
 
 impl Addresses {
-    async fn init(process: &Process) -> Self {
-        let main_module = {
-            let main_module_base = retry(|| {
-                PROCESS_NAME
-                    .iter()
-                    .find_map(|&p| process.get_module_address(p).ok())
-            })
-            .await;
-            let main_module_size =
-                retry(|| pe::read_size_of_image(process, main_module_base)).await;
-            (main_module_base, main_module_size as u64)
-        };
-
-        const SIG: Signature<5> = Signature::new("76 0C 48 8B 0D");
-        let mut ptr = retry(|| SIG.scan_process_range(process, main_module)).await + 5;
-        ptr = ptr + 0x4 + retry(|| process.read::<i32>(ptr)).await;
-
-        Self { base_address: ptr }
+    async fn init(_process: &Process) -> Self {
+//        let main_module = {
+//            let main_module_base = retry(|| {
+//                PROCESS_NAME
+//                    .iter()
+//                    .find_map(|&p| process.get_module_address(p).ok())
+//            })
+//            .await;
+//            let main_module_size =
+//                retry(|| pe::read_size_of_image(process, main_module_base)).await;
+//            (main_module_base, main_module_size as u64)
+//        };
+//
+//        const SIG: Signature<5> = Signature::new("76 0C 48 8B 0D");
+//        let mut ptr = retry(|| SIG.scan_process_range(process, main_module)).await + 5;
+//        ptr = ptr + 0x4 + retry(|| process.read::<i32>(ptr)).await;
+//
+        Self { /* base_address: ptr */ }
     }
 }
 

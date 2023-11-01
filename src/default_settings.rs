@@ -129,11 +129,198 @@ pub struct Settings {
                 ///Princess Quest 2
                 _pq_2: Title,
 
+                    ///Start Arcade
+                    #[default = false]
+                    _pq_2_start: bool,
+
+                    ///Exit Starting Room
+                    #[default = false]
+                    _pq_2_1: bool,
+
+                    ///2nd Room
+                    #[default = false]
+                    _pq_2_2: bool,
+
+                    ///Balls Room
+                    #[default = false]
+                    _pq_2_3: bool,
+
+                    ///4th Room
+                    #[default = false]
+                    _pq_2_4: bool,
+
+                    ///Split Puzzle Room
+                    #[default = false]
+                    _pq_2_5: bool,
+
+                    ///Big Torch Room
+                    #[default = false]
+                    _pq_2_6: bool,
+
+                    ///Hallway
+                    #[default = false]
+                    _pq_2_7: bool,
+
+                    ///Big Split Puzzle Room
+                    #[default = false]
+                    _pq_2_8: bool,
+
+                    ///Bedroom
+                    #[default = false]
+                    _pq_2_9: bool,
+
+                    ///Enter Final Room
+                    #[default = false]
+                    _pq_2_10: bool,
+
+                    ///Finish Arcade
+                    #[default = false]
+                    _pq_2_end: bool,
+
+
                 #[heading_level = 3]
                 ///Princess Quest 3
                 _pq_3: Title,
 
-    #[heading_level = 0]
-    ///In-Game Time Settings
-    _igt_settings: Title,
+                    ///Start Arcade
+                    #[default = false]
+                    _pq3_start: bool,
+
+                    ///Hallway
+                    #[default = false]
+                    _pq3_1: bool,
+
+                    ///Hub Room
+                    #[default = false]
+                    _pq3_2: bool,
+
+                    ///Conveyor Room
+                    #[default = false]
+                    _pq3_3: bool,
+
+                    ///Split Puzzle Room (Glitchtrap Plush)
+                    #[default = false]
+                    _pq3_4: bool,
+
+                    ///Flamin' Hot Foxy
+                    #[default = false]
+                    _pq3_5: bool,
+
+                    ///Prize Counter
+                    #[default = false]
+                    _pq3_6: bool,
+
+                    ///Enter Final Area
+                    #[default = false]
+                    _pq3_7: bool,
+
+                    ///Use Key
+                    #[default = false]
+                    _pq3_end: bool,
+
+            #[heading_level = 2]
+            ///Counting Splits
+            _counter_splits: Title,
+
+                    #[heading_level = 3]
+                    ///Daycare Generators
+                    _daycare_gens: Title,
+
+                        ///Generator 1
+                        #[default = false]
+                        _daycare_gen_1: bool,
+
+                        ///Generator 2
+                        #[default = false]
+                        _daycare_gen_2: bool,
+
+                        ///Generator 3
+                        #[default = false]
+                        _daycare_gen_3: bool,
+
+                        ///Generator 4
+                        #[default = false]
+                        _daycare_gen_4: bool,
+
+                        ///Generator 5
+                        #[default = false]
+                        _daycare_gen_5: bool,
+
+                    #[heading_level = 3]
+                    ///Fazerblast Flags
+                    _fazer_flags: Title,
+
+                        ///Flag 1
+                        #[default = false]
+                        _fazer_flag_1: bool,
+
+                        ///Flag 2
+                        #[default = false]
+                        _fazer_flag_2: bool,
+
+                        ///Flag 3
+                        #[default = false]
+                        _fazer_flag_3: bool,
+
+                    #[heading_level = 3]
+                    ///Monty Bucket Balls
+                    _monty_bucket: Title,
+
+                        ///10 Balls
+                        #[default = false]
+                        _monty_balls_10: bool,
+
+                        ///20 Balls
+                        #[default = false]
+                        _monty_balls_20: bool,
+
+                        ///25 Balls (bucket full)
+                        #[default = false]
+                        _monty_balls_25: bool,
+
+                    #[heading_level = 3]
+                    ///Sewer Generators
+                    _sewer_gens: Title,
+
+                        ///Generator 1
+                        #[default = false]
+                        _sewer_gen_1: bool,
+
+                        ///Generator 2
+                        #[default = false]
+                        _sewer_gen_2: bool,
+
+                        ///Generator 3
+                        #[default = false]
+                        _sewer_gen_3: bool,
+
+                    #[heading_level = 3]
+                    ///West Arcade Generators
+                    _west_arcade_gens: Title,
+
+                        ///Generator 1
+                        #[default = false]
+                        _west_arcade_gen_1: bool,
+
+                        ///Generator 2
+                        #[default = false]
+                        _west_arcade_gen_2: bool,
+
+                        ///Generator 3
+                        #[default = false]
+                        _west_arcade_gen_3: bool,
+
+                        ///Generator 4
+                        #[default = false]
+                        _west_arcade_gen_4: bool,
+
+                        ///Generator 5
+                        #[default = false]
+                        _west_arcade_gen_5: bool,
+
+                    #[heading_level = 3]
+                    ///Deload Splits
+                    _deload_splits: Title,
+
+
 }
