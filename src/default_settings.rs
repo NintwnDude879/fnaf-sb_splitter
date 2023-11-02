@@ -6,7 +6,6 @@ use asr::{
 #[derive(Gui)]
 pub struct Settings {
     ///Split Settings
-    #[heading_level = 1]
     _split_settings: Title,
 
         #[heading_level = 1]
