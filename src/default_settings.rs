@@ -494,101 +494,356 @@ pub struct Settings {
                     ///Backstage
                     _backstage_collectibles: Title,
 
+                        ///El Chip Pinata
+                        #[default = false]
+                        CommonCollectible_13: bool,
+
+                        ///Freddy Icon Shirt
+                        #[default = false]
+                        c_shirt_freddyicon: bool,
+
+                        ///Glam Chica Figure
+                        #[default = false]
+                        UncommonCollectible_7: bool,
+
                     #[heading_level = 4]
                     ///Basement Kitchen
                     _basement_kitchen_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
 
                     #[heading_level = 4]
                     ///Bonnie Bowl
                     _bonnie_bowl_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Chica's Bakery
                     _chica_bakery_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Daycare
                     _daycare_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///El Chips
                     _el_chips_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Fazerblast
                     _fazerblast_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Fazerblast Sublobby
                     _fazer_lobby_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Kid's Cove Sublobby
                     _kids_cove_lobby_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Laundry
                     _laundry_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Lobby
                     _lobby_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Main Atrium
                     _atrium_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Monty Golf
                     _monty_golf_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Monty Golf Sublobby
                     _monty_golf_lobby_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Parts & Service
                     _parts_n_service_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Prize Counter
                     _prize_counter_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Rockstar Row
                     _rockstar_row_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Roxy Raceway
                     _roxy_raceway_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Roxy Raceway Sublobby
                     _roxy_raceway_lobby_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Roxy Salon
                     _roxy_salon_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Salads & Sides
                     _salads_n_sides_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Sewers
                     _sewers_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Utility Tunnels
                     _utility_tunnels_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Warehouse
                     _warehouse_collectibles: Title,
 
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///West Arcade
                     _west_arcade_collectibles: Title,
+
+                        ///
+                        #[default = false]
+                        
 
                 #[heading_level = 3]
                 ///Equipment
@@ -598,117 +853,521 @@ pub struct Settings {
                     ///Backstage
                     _backstage_equipment: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Basement Kitchen
                     _basement_kitchen_equipment: Title,
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Bonnie Bowl
                     _bonnie_bowl_equipment: Title,
 
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Chica's Bakery
                     _chica_bakery_equipment: Title,
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Daycare
                     _daycare_equipment: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///El Chips
                     _el_chips_equipment: Title,
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Fazerblast
                     _fazerblast_equipment: Title,
 
-                    #[heading_level = 4]
-                    ///Fazerblast Sublobby
-                    _fazer_lobby_equipment: Title,
+                        ///
+                        #[default = false]
+                        
 
-                    #[heading_level = 4]
-                    ///Kid's Cove Sublobby
-                    _kids_cove_lobby_equipment: Title,
+                        ///
+                        #[default = false]
+                        
 
-                    #[heading_level = 4]
-                    ///Laundry
-                    _laundry_equipment: Title,
+                        ///
+                        #[default = false]
 
                     #[heading_level = 4]
                     ///Lobby
                     _lobby_equipment: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Main Atrium
                     _atrium_equipment: Title,
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Monty Golf
                     _monty_golf_equipment: Title,
 
-                    #[heading_level = 4]
-                    ///Monty Golf Sublobby
-                    _monty_golf_lobby_equipment: Title,
+                        ///
+                        #[default = false]
+                        
 
-                    #[heading_level = 4]
-                    ///Parts & Service
-                    _parts_n_service_equipment: Title,
+                        ///
+                        #[default = false]
+                        
 
-                    #[heading_level = 4]
-                    ///Prize Counter
-                    _prize_counter_equipment: Title,
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Rockstar Row
                     _rockstar_row_equipment: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Roxy Raceway
                     _roxy_raceway_equipment: Title,
 
-                    #[heading_level = 4]
-                    ///Roxy Raceway Sublobby
-                    _roxy_raceway_lobby_equipment: Title,
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Roxy Salon
                     _roxy_salon_equipment: Title,
 
-                    #[heading_level = 4]
-                    ///Salads & Sides
-                    _salads_n_sides_equipment: Title,
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///Sewers
                     _sewers_equipment: Title,
 
+                        ///
+                        #[default = false]
+                        
+
                     #[heading_level = 4]
                     ///Utility Tunnels
                     _utility_tunnels_equipment: Title,
 
-                    #[heading_level = 4]
-                    ///Warehouse
-                    _warehouse_equipment: Title,
+                        ///
+                        #[default = false]
+                        
+
+                        ///
+                        #[default = false]
+                        
 
                     #[heading_level = 4]
                     ///West Arcade
                     _west_arcade_equipment: Title,
 
+                        ///
+                        #[default = false]
+                        
+
+
                 #[heading_level = 3]
                 ///Message Bags
                 _message_bags: Title,
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
 
                 #[heading_level = 3]
                 ///Special Collectibles
                 _special_collectibles: Title,
 
+                    ///
+                    #[default = false]
+                        
+
                 #[heading_level = 3]
                 ///Retro CDs
                 _retro_cds: Title,
 
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
+                    ///
+                    #[default = false]
+                        
+
             #[heading_level = 2]
             ///Security Badges
             _security_badges: Title,
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
 
         #[heading_level = 1]
         ///Positional Splits
@@ -718,45 +1377,217 @@ pub struct Settings {
             ///Bonnie Bowl
             _bonnie_bowl_position: Title,
 
+                ///
+                #[default = false]
+                  
+
             #[heading_level = 2]
             ///Daycare
             _daycare_position: Title,
+
+                ///
+                #[default = false]
+                  
 
             #[heading_level = 2]
             ///El Chips
             _el_chips_position: Title,
 
+                ///
+                #[default = false]
+                  
+
             #[heading_level = 2]
             ///Fazerblast
             _fazerblast_position: Title,
+
+                ///
+                #[default = false]
+                  
 
             #[heading_level = 2]
             ///Fazerblast Lobby
             _fazerblast_lobby_position: Title,
 
+                ///
+                #[default = false]
+                  
+
             #[heading_level = 2]
             ///Underground / Afton Cave
             _afton_position: Title,
+
+                ///
+                #[default = false]
+                  
 
             #[heading_level = 2]
             ///Utility Tunnels
             _utility_tunnels_position: Title,
 
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
+
             #[heading_level = 2]
             ///West Arcade
             _west_arcade_position: Title,
+
+                ///
+                #[default = false]
+                  
+
+                ///
+                #[default = false]
+                  
 
         #[heading_level = 1]
         ///Time Splits
         _time_splits: Title,
 
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
+            ///
+            #[default = false]
+            
+
     #[heading_level = 1]
     ///In-Game Time Settings
     _igt_settings: Title,
 
+        ///
+        #[default = false]
+        
+
+        ///
+        #[default = false]
+        
+
+        ///
+        #[default = false]
+        
+
+        ///
+        #[default = false]
+        
+
     #[heading_level = 1]
     ///Reset Settings
     _reset_settings: Title,
+
+        ///
+        #[default = false]
+        
 
     ///Unsupported version warning
     #[default = false]
