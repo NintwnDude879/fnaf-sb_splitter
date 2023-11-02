@@ -6,6 +6,7 @@ use asr::{
 #[derive(Gui)]
 pub struct Settings {
     ///Split Settings
+    #[heading_level = 1]
     _split_settings: Title,
 
         #[heading_level = 1]
@@ -340,7 +341,7 @@ pub struct Settings {
                 ///Theatre Deload
                 #[default = false]
                 _theatre_deload: bool,
-                        
+
             ///Kid's Cove Sublobby
             #[heading_level = 2]
             _kids_cove_lobby_deloads: Title,
@@ -349,7 +350,7 @@ pub struct Settings {
                 #[default = false]
                 _kids_cove_fence_deload: bool,
 
-                        
+
             ///Monty Golf Sublobby
             #[heading_level = 2]
             _monty_golf_lobby_deloads: Title,
@@ -357,7 +358,7 @@ pub struct Settings {
                 ///Fence Deload
                 #[default = false]
                 _monty_golf_fence_deload: bool,
-                        
+
             ///Prize Counter
             #[heading_level = 2]
             _prize_counter_deloads: Title,
@@ -421,26 +422,26 @@ pub struct Settings {
         #[heading_level = 1]
         ///Ending Splits
         _ending_splits: Title,
-                    
-            #[heading_level = 2]
+
             ///Vanny Ending
-            _vanny_ending: Title,
+            #[default = false]
+            _vanny_ending: bool,
 
-            #[heading_level = 2]
             ///Car Battery Ending
-            _car_battery_ending: Title,
+            #[default = false]
+            _car_battery_ending: bool,
 
-            #[heading_level = 2]
             ///Escape Ending
-            _escape_ending: Title,
+            #[default = false]
+            _escape_ending: bool,
 
-            #[heading_level = 2]
             ///Fire Escape Ending
-            _fire_escape_ending: Title,
+            #[default = false]
+            _fire_escape_ending: bool,
 
-            #[heading_level = 2]
-            /// Ending
-            _pq_ending: Title,
+            ///Princess Quest Ending
+            #[default = false]
+            _pq_ending: bool,
 
             #[heading_level = 2]
             ///Afton Ending
@@ -588,8 +589,8 @@ pub struct Settings {
 
                     #[heading_level = 4]
                     ///West Arcade
-                    _west_arcade_collectibles: Title, 
-                                
+                    _west_arcade_collectibles: Title,
+
                 #[heading_level = 3]
                 ///Equipment
                 _equipment: Title,
@@ -717,31 +718,31 @@ pub struct Settings {
             #[heading_level = 2]
             ///Bonnie Bowl
             _bonnie_bowl_position: Title,
-                        
+
             #[heading_level = 2]
             ///Daycare
             _daycare_position: Title,
-                        
+
             #[heading_level = 2]
             ///El Chips
             _el_chips_position: Title,
-                        
+
             #[heading_level = 2]
             ///Fazerblast
             _fazerblast_position: Title,
-                        
+
             #[heading_level = 2]
             ///Fazerblast Lobby
             _fazerblast_lobby_position: Title,
-                        
+
             #[heading_level = 2]
             ///Underground / Afton Cave
             _afton_position: Title,
-                        
+
             #[heading_level = 2]
             ///Utility Tunnels
             _utility_tunnels_position: Title,
-                        
+
             #[heading_level = 2]
             ///West Arcade
             _west_arcade_position: Title,
@@ -750,12 +751,15 @@ pub struct Settings {
         ///Time Splits
         _time_splits: Title,
 
+    #[heading_level = 1]
     ///In-Game Time Settings
     _igt_settings: Title,
 
+    #[heading_level = 1]
     ///Reset Settings
     _reset_settings: Title,
 
     ///Unsupported version warning
+    #[default = false]
     _unknown_version_warn: bool,
 }
