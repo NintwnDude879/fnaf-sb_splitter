@@ -5,7 +5,6 @@ use asr::{
 
 #[derive(Gui)]
 pub struct Settings {
-    #[heading_level = 0]
     ///Split Settings
     _split_settings: Title,
 
@@ -218,109 +217,545 @@ pub struct Settings {
                     #[default = false]
                     _pq3_end: bool,
 
+        #[heading_level = 1]
+        ///Counting Splits
+        _counter_splits: Title,
+
             #[heading_level = 2]
-            ///Counting Splits
-            _counter_splits: Title,
+            ///Daycare Generators
+            _daycare_gens: Title,
 
-                    #[heading_level = 3]
-                    ///Daycare Generators
-                    _daycare_gens: Title,
+                ///Generator 1
+                #[default = false]
+                _daycare_gen_1: bool,
 
-                        ///Generator 1
-                        #[default = false]
-                        _daycare_gen_1: bool,
+                ///Generator 2
+                #[default = false]
+                _daycare_gen_2: bool,
 
-                        ///Generator 2
-                        #[default = false]
-                        _daycare_gen_2: bool,
+                ///Generator 3
+                #[default = false]
+                _daycare_gen_3: bool,
 
-                        ///Generator 3
-                        #[default = false]
-                        _daycare_gen_3: bool,
+                ///Generator 4
+                #[default = false]
+                _daycare_gen_4: bool,
 
-                        ///Generator 4
-                        #[default = false]
-                        _daycare_gen_4: bool,
+                ///Generator 5
+                #[default = false]
+                _daycare_gen_5: bool,
 
-                        ///Generator 5
-                        #[default = false]
-                        _daycare_gen_5: bool,
+            #[heading_level = 2]
+            ///Fazerblast Flags
+            _fazer_flags: Title,
 
-                    #[heading_level = 3]
-                    ///Fazerblast Flags
-                    _fazer_flags: Title,
+                ///Flag 1
+                #[default = false]
+                _fazer_flag_1: bool,
 
-                        ///Flag 1
-                        #[default = false]
-                        _fazer_flag_1: bool,
+                ///Flag 2
+                #[default = false]
+                _fazer_flag_2: bool,
 
-                        ///Flag 2
-                        #[default = false]
-                        _fazer_flag_2: bool,
+                ///Flag 3
+                #[default = false]
+                _fazer_flag_3: bool,
 
-                        ///Flag 3
-                        #[default = false]
-                        _fazer_flag_3: bool,
+            #[heading_level = 2]
+            ///Monty Bucket Balls
+            _monty_bucket: Title,
 
-                    #[heading_level = 3]
-                    ///Monty Bucket Balls
-                    _monty_bucket: Title,
+                ///10 Balls
+                #[default = false]
+                _monty_balls_10: bool,
 
-                        ///10 Balls
-                        #[default = false]
-                        _monty_balls_10: bool,
+                ///20 Balls
+                #[default = false]
+                _monty_balls_20: bool,
 
-                        ///20 Balls
-                        #[default = false]
-                        _monty_balls_20: bool,
+                ///25 Balls (bucket full)
+                #[default = false]
+                _monty_balls_25: bool,
 
-                        ///25 Balls (bucket full)
-                        #[default = false]
-                        _monty_balls_25: bool,
+            #[heading_level = 2]
+            ///Sewer Generators
+            _sewer_gens: Title,
 
-                    #[heading_level = 3]
-                    ///Sewer Generators
-                    _sewer_gens: Title,
+                ///Generator 1
+                #[default = false]
+                _sewer_gen_1: bool,
 
-                        ///Generator 1
-                        #[default = false]
-                        _sewer_gen_1: bool,
+                ///Generator 2
+                #[default = false]
+                _sewer_gen_2: bool,
 
-                        ///Generator 2
-                        #[default = false]
-                        _sewer_gen_2: bool,
+                ///Generator 3
+                #[default = false]
+                _sewer_gen_3: bool,
 
-                        ///Generator 3
-                        #[default = false]
-                        _sewer_gen_3: bool,
+            #[heading_level = 2]
+            ///West Arcade Generators
+            _west_arcade_gens: Title,
 
-                    #[heading_level = 3]
-                    ///West Arcade Generators
-                    _west_arcade_gens: Title,
+                ///Generator 1
+                #[default = false]
+                _west_arcade_gen_1: bool,
 
-                        ///Generator 1
-                        #[default = false]
-                        _west_arcade_gen_1: bool,
+                ///Generator 2
+                #[default = false]
+                _west_arcade_gen_2: bool,
 
-                        ///Generator 2
-                        #[default = false]
-                        _west_arcade_gen_2: bool,
+                ///Generator 3
+                #[default = false]
+                _west_arcade_gen_3: bool,
 
-                        ///Generator 3
-                        #[default = false]
-                        _west_arcade_gen_3: bool,
+                ///Generator 4
+                #[default = false]
+                _west_arcade_gen_4: bool,
 
-                        ///Generator 4
-                        #[default = false]
-                        _west_arcade_gen_4: bool,
+                ///Generator 5
+                #[default = false]
+                _west_arcade_gen_5: bool,
 
-                        ///Generator 5
-                        #[default = false]
-                        _west_arcade_gen_5: bool,
+        #[heading_level = 1]
+        ///Deload Splits
+        _deload_splits: Title,
 
-                    #[heading_level = 3]
-                    ///Deload Splits
-                    _deload_splits: Title,
+            ///Backstage
+            #[heading_level = 2]
+            _backstage_deloads: Title,
 
+                ///Foxy Cutout Deload
+                #[default = false]
+                _foxy_cutout_deload: bool,
 
+            ///Daycare
+            #[heading_level = 2]
+            _daycare_deloads: Title,
+
+                ///Arcade Deload
+                #[default = false]
+                _arcade_deload: bool,
+
+                ///Theatre Deload
+                #[default = false]
+                _theatre_deload: bool,
+                        
+            ///Kid's Cove Sublobby
+            #[heading_level = 2]
+            _kids_cove_lobby_deloads: Title,
+
+                ///Fence Deload
+                #[default = false]
+                _kids_cove_fence_deload: bool,
+
+                        
+            ///Monty Golf Sublobby
+            #[heading_level = 2]
+            _monty_golf_lobby_deloads: Title,
+
+                ///Fence Deload
+                #[default = false]
+                _monty_golf_fence_deload: bool,
+                        
+            ///Prize Counter
+            #[heading_level = 2]
+            _prize_counter_deloads: Title,
+
+                ///Counter Deload
+                #[default = false]
+                _counter_deload: bool,
+
+            ///Rockstar Row
+            #[heading_level = 2]
+            _rockstar_row_deloads: Title,
+
+                ///Chica Greenroom Deload
+                #[default = false]
+                _chica_greenroom_deload: bool,
+
+                ///Curtain Deload
+                #[default = false]
+                _curtain_deload: bool,
+
+                ///Roxy Cutout Deload
+                #[default = false]
+                _roxy_cutout_deload: bool,
+
+                ///Tunnel Door Deload
+                #[default = false]
+                _tunnel_door_deload: bool,
+
+            ///Roxy Raceway
+            #[heading_level = 2]
+            _roxy_raceway_deloads: Title,
+
+                ///Afton Rock Column Deload
+                #[default = false]
+                _afton_rocks_deload: bool,
+
+                ///Garage Fencejump Deload
+                #[default = false]
+                _garage_fence_deload: bool,
+
+                ///Roxy's Eyes Deload
+                #[default = false]
+                _roxy_eyes_deload: bool,
+
+            ///Roxy Raceway Sublobby
+            #[heading_level = 2]
+            _roxy_raceway_lobby_deloads: Title,
+
+                ///Balloon Deload
+                #[default = false]
+                _balloon_deload: bool,
+
+            ///Roxy Salon
+            #[heading_level = 2]
+            _roxy_salon_deloads: Title,
+
+                ///Plant Deload
+                #[default = false]
+                _plant_deload: bool,
+
+        #[heading_level = 1]
+        ///Ending Splits
+        _ending_splits: Title,
+                    
+            #[heading_level = 2]
+            ///Vanny Ending
+            _vanny_ending: Title,
+
+            #[heading_level = 2]
+            ///Car Battery Ending
+            _car_battery_ending: Title,
+
+            #[heading_level = 2]
+            ///Escape Ending
+            _escape_ending: Title,
+
+            #[heading_level = 2]
+            ///Fire Escape Ending
+            _fire_escape_ending: Title,
+
+            #[heading_level = 2]
+            /// Ending
+            _pq_ending: Title,
+
+            #[heading_level = 2]
+            ///Afton Ending
+            _afton_ending: Title,
+
+                ///Button 1
+                #[default = false]
+                _afton_button_1: bool,
+
+                ///Button 2
+                #[default = false]
+                _afton_button_2: bool,
+
+                ///Button 3
+                #[default = false]
+                _afton_button_3: bool,
+
+                ///Button 4
+                #[default = false]
+                _afton_button_4: bool,
+
+                ///Button 5
+                #[default = false]
+                _afton_button_5: bool,
+
+                ///Button 6
+                #[default = false]
+                _afton_button_6: bool,
+
+                ///Button 7
+                #[default = false]
+                _afton_button_7: bool,
+
+                ///Button 8 / Ending
+                #[default = false]
+                _afton_button_8: bool,
+
+        #[heading_level = 1]
+        ///Item Splits
+        _item_splits: Title,
+
+            #[heading_level = 2]
+            ///General Items
+            _general_items: Title,
+
+                #[heading_level = 3]
+                ///Collectibles
+                _collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Backstage
+                    _backstage_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Basement Kitchen
+                    _basement_kitchen_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Bonnie Bowl
+                    _bonnie_bowl_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Chica's Bakery
+                    _chica_bakery_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Daycare
+                    _daycare_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///El Chips
+                    _el_chips_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Fazerblast
+                    _fazerblast_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Fazerblast Sublobby
+                    _fazer_lobby_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Kid's Cove Sublobby
+                    _kids_cove_lobby_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Laundry
+                    _laundry_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Lobby
+                    _lobby_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Main Atrium
+                    _atrium_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Monty Golf
+                    _monty_golf_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Monty Golf Sublobby
+                    _monty_golf_lobby_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Parts & Service
+                    _parts_n_service_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Prize Counter
+                    _prize_counter_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Rockstar Row
+                    _rockstar_row_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Roxy Raceway
+                    _roxy_raceway_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Roxy Raceway Sublobby
+                    _roxy_raceway_lobby_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Roxy Salon
+                    _roxy_salon_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Salads & Sides
+                    _salads_n_sides_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Sewers
+                    _sewers_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Utility Tunnels
+                    _utility_tunnels_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///Warehouse
+                    _warehouse_collectibles: Title,
+
+                    #[heading_level = 4]
+                    ///West Arcade
+                    _west_arcade_collectibles: Title, 
+                                
+                #[heading_level = 3]
+                ///Equipment
+                _equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Backstage
+                    _backstage_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Basement Kitchen
+                    _basement_kitchen_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Bonnie Bowl
+                    _bonnie_bowl_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Chica's Bakery
+                    _chica_bakery_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Daycare
+                    _daycare_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///El Chips
+                    _el_chips_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Fazerblast
+                    _fazerblast_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Fazerblast Sublobby
+                    _fazer_lobby_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Kid's Cove Sublobby
+                    _kids_cove_lobby_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Laundry
+                    _laundry_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Lobby
+                    _lobby_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Main Atrium
+                    _atrium_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Monty Golf
+                    _monty_golf_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Monty Golf Sublobby
+                    _monty_golf_lobby_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Parts & Service
+                    _parts_n_service_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Prize Counter
+                    _prize_counter_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Rockstar Row
+                    _rockstar_row_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Roxy Raceway
+                    _roxy_raceway_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Roxy Raceway Sublobby
+                    _roxy_raceway_lobby_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Roxy Salon
+                    _roxy_salon_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Salads & Sides
+                    _salads_n_sides_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Sewers
+                    _sewers_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Utility Tunnels
+                    _utility_tunnels_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///Warehouse
+                    _warehouse_equipment: Title,
+
+                    #[heading_level = 4]
+                    ///West Arcade
+                    _west_arcade_equipment: Title,
+
+                #[heading_level = 3]
+                ///Message Bags
+                _message_bags: Title,
+
+                #[heading_level = 3]
+                ///Special Collectibles
+                _special_collectibles: Title,
+
+                #[heading_level = 3]
+                ///Retro CDs
+                _retro_cds: Title,
+
+            #[heading_level = 2]
+            ///Security Badges
+            _security_badges: Title,
+
+        #[heading_level = 1]
+        ///Positional Splits
+        _positional_splits: Title,
+
+            #[heading_level = 2]
+            ///Bonnie Bowl
+            _bonnie_bowl_position: Title,
+                        
+            #[heading_level = 2]
+            ///Daycare
+            _daycare_position: Title,
+                        
+            #[heading_level = 2]
+            ///El Chips
+            _el_chips_position: Title,
+                        
+            #[heading_level = 2]
+            ///Fazerblast
+            _fazerblast_position: Title,
+                        
+            #[heading_level = 2]
+            ///Fazerblast Lobby
+            _fazerblast_lobby_position: Title,
+                        
+            #[heading_level = 2]
+            ///Underground / Afton Cave
+            _afton_position: Title,
+                        
+            #[heading_level = 2]
+            ///Utility Tunnels
+            _utility_tunnels_position: Title,
+                        
+            #[heading_level = 2]
+            ///West Arcade
+            _west_arcade_position: Title,
+
+        #[heading_level = 1]
+        ///Time Splits
+        _time_splits: Title,
+
+    ///In-Game Time Settings
+    _igt_settings: Title,
+
+    ///Reset Settings
+    _reset_settings: Title,
+
+    ///Unsupported version warning
+    _unknown_version_warn: bool,
 }
