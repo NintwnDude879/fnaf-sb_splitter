@@ -19,8 +19,6 @@
 )]
 
 mod default_settings;
-extern crate alloc;
-use alloc::vec::Vec;
 use default_settings::Settings;
 
 use asr::{
@@ -40,8 +38,6 @@ const PROCESS_NAME: &str = &"fnaf9-Win64-Shipping.exe";
 
 async fn main() {
     let mut settings = Settings::register();
-
-    let mut completed_splits = Vec::<&str>::new();
 
     loop {
         // Hook to the target process

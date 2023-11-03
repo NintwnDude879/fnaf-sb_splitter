@@ -706,7 +706,7 @@ pub struct Settings {
                     ///Prize Counter
                     prize_counter_collectibles: Title,
 
-                        ///Frozen Freddy Treat 
+                        ///Frozen Freddy Treat
                         #[default = false]
                         CommonCollectible_3: bool,
 
@@ -1441,7 +1441,7 @@ pub struct Settings {
 
                 ///STR-ATR-W Stairs
                 #[default = false]
-                str_atr_w_stairs: bool, 
+                str_atr_w_stairs: bool,
 
                 ///STR-LB Stairs
                 #[default = false]
@@ -1563,8 +1563,7 @@ pub struct Settings {
             #[default = false]
             time_6_00: bool,
 
-    #[heading_level = 1]
-    ///In-Game Time Settings
+    ///Non-Split Functionality
     igt_settings: Title,
 
         ///Elevator Pauses
@@ -1583,15 +1582,11 @@ pub struct Settings {
         #[default = false]
         pause_pause: bool,
 
-    #[heading_level = 1]
-    ///Reset Settings
-    reset_settings: Title,
-
-        ///
+        ///Reset On New Game
         #[default = false]
-        
+        reset_settings: bool,
 
-    ///Unsupported version warning
-    #[default = false]
-    unknown_version_warn: bool,
+        ///Unsupported version warning
+        #[default = false]
+        unknown_version_warn: bool,
 }
